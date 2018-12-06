@@ -1,0 +1,22 @@
+version: 2
+
+job-defaults: &job-defaults
+  docker:
+    - image: circleci/node:8.11
+  working_directory: ~/repo
+
+
+jobs:
+  release:
+    <<: *job-defaults
+    steps:
+      - checkout
+      - run: yarn install
+      - run: npx lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo
+
+workflows:
+  version: 2
+
+  release_workflow:
+    jobs:
+      - release
