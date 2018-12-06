@@ -10,7 +10,7 @@
     "@commitlint/config-conventional": "^7.0.1",
     "husky": "^0.14.3",
     "lerna": "^2.11.0",
-    "semantic-release": "15.9.17",
+    "semantic-release": "15.10.6",
     "semantic-release-monorepo": "^6.1.1"
   },
   "commitlint": {
