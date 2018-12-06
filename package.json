@@ -1,7 +1,7 @@
 {
   "name": "lerna-conventional-commits-example",
   "version": "1.0.0",
-  "private": true,
+  "repository": "https://github.com/anthonylim24/lerna-conventional-commits-example.git",
   "scripts": {
     "commitmsg": "commitlint -e $GIT_PARAMS"
   },
@@ -10,7 +10,8 @@
     "@commitlint/config-conventional": "^7.0.1",
     "husky": "^0.14.3",
     "lerna": "^2.11.0",
-    "semantic-release": "15.10.6",
+    "semantic-release": "15.9.17",
+    "@semantic-release/git": "7.0.5",
     "semantic-release-monorepo": "^6.1.1"
   },
   "commitlint": {
