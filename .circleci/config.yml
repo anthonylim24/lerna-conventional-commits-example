@@ -3,8 +3,6 @@ version: 2
 job-defaults: &job-defaults
   docker:
     - image: circleci/node:8.11
-  working_directory: ~/repo
-
 
 jobs:
   release:
